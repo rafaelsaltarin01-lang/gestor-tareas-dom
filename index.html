@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Gestor de Tareas - Proyecto DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <header>
+            <h1>Lista de Pendientes</h1>
+            <p>Organiza tu día paso a paso</p>
+        </header>
+
+        <main>
+            <form id="formulario-tareas">
+                <div class="grupo-input">
+                    <input type="text" id="entrada-tarea" placeholder="¿Qué tienes pendiente?" required>
+                </div>
+                
+                <div class="grupo-input">
+                    <label for="prioridad-tarea">Prioridad:</label>
+                    <select id="prioridad-tarea">
+                        <option value="baja">Baja</option>
+                        <option value="media">Media</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="boton-agregar">Agregar Tarea</button>
+            </form>
+
+            <section class="seccion-lista">
+                <h2>Mis Tareas</h2>
+                
+                <ul id="lista-tareas">
+                    
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
